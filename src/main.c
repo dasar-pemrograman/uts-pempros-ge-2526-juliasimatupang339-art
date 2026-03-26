@@ -1,16 +1,15 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h> 
+
+struct Receive {
+    char ID [256];
+    char name [256];
+    char quantity [256];
+    char price [256];
+
+};
 
 int main() {
-    char input[256];
-
-    while (fgets(input, sizeof(input), stdin)) {
-        if (strncmp(input, "---", 3) == 0) {
-            break;
-        }
-
-        // TODO: implement logic
-    }
-
-    return 0;
+    struct Receive;
 }
